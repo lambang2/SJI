@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. Srijaya Internasional</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav>
+        <img src="gambar/logo.png" alt="Logo Perusahaan">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li class="dropdown">
+                <a href="#">Tentang Kami ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="profil-perusahaan.html">Profil Perusahaan</a></li>
+                    <li><a href="visi-misi.html">Visi & Misi</a></li>
+                    <li><a href="struktur-perusahaan.html">Struktur Perusahaan</a></li>
+                    <li><a href="logo-perusahaan.html">Logo Perusahaan</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Layanan ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="ulasan-konsumen.html">Ulasan Konsumen</a></li>
+                    <li><a href="sertifikasi.html">Sertfikasi</a></li>
+                    <li><a href="penghargaan.html">Penghargaan</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Produk ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="benih-jagung.html">Benih Jagung</a></li>
+                    <li><a href="brosur.html">Brosur</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Media & Informasi ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="press-release.html">Press Release</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="karir.html">Karir</a></li>
+                </ul>
+            </li>
+            </li>
+            <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+        </ul>
+    </nav>
+ <!-- IMAGE SLIDER -->
+<div class="image">
+    <div class="mySlides"></div>
+        <img src="gambar/head-index.jpg" alt="Header">
+        <div class="title">
+            <h3>Selamat Datang</h3>
+            <br>
+            <p>di PT. SRIJAYA INTERNASIONAL Ahlinya Benih</p>
+        </div>
+    </div>
+</div>
+
+<!-- ABOUT US -->
+<main id="about-us" style="margin-top: 40px;">
+    <div class="SEKILAS PERUSAHAAN">
+        <h1>SEKILAS PERUSAHAAN</h1>
+        <div class="flex-box" style="display: flex; align-items: center; gap: 20px;">
+            <div class="box" style="flex: 1;">
+				<p>PT. Srijaya Internasional adalah perusahaan nasional yang bergerak di bidang perbenihan jagung hibrida, yang didirikan pada tahun 2012. Perusahaan ini berkomitmen untuk meningkatkan kesejahteraan petani melalui pengembangan varietas unggul yang berkualitas tinggi. PT. Srijaya Internasional memiliki satu fasilitas produksi dengan kapasitas yang memadai, yang terletak di Desa Kencong, Kecamatan Kepung, Kabupaten Kediri. Dilengkapi dengan sarana dan prasarana yang lengkap serta didukung oleh sumber daya manusia yang berkompeten, PT. Srijaya Internasional terus berkontribusi dalam upaya peningkatan ketahanan pangan dan kemajuan sektor pertanian di Indonesia.</p>
+			</div>
+			<aside style="flex: 1;">
+				<div class="container" style="position: relative; width: 100%; max-width: 400px; margin: auto;">
+					<div class="manualslide" style="width: 100%; aspect-ratio: 4/3; overflow: hidden; position: relative;">
+						<img id="slideImage" src="gambar/1.jpg" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+					</div>
+					<div class="dots-container" style="text-align: center; margin-top: 10px;">
+						<button onclick="plusDivs(-1)" style="background: none; border: none; font-size: 14px; cursor: pointer; margin-right: 10px;">Prev</button>
+						<span class="dot" onclick="currentSlide(0)"></span>
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+						<span class="dot" onclick="currentSlide(5)"></span>
+						<span class="dot" onclick="currentSlide(6)"></span>
+						<span class="dot" onclick="currentSlide(7)"></span>
+						<button onclick="plusDivs(1)" style="background: none; border: none; font-size: 14px; cursor: pointer; margin-left: 10px;">Next</button>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</div>
+</main>
+
+<script src="slider.js"></script>
+		
+    <script>
+            const images = ["gambar/1.jpg", "gambar/2.jpg", "gambar/3.jpg", "gambar/4.jpg", "gambar/5.jpg", "gambar/6.jpg", "gambar/7.jpg", "gambar/8.jpg"];
+            function plusDivs(n) {
+                slideIndex += n;
+                if (slideIndex >= images.length) slideIndex = 0;
+                if (slideIndex < 0) slideIndex = images.length - 1;
+                updateSlide();
+            }
+            function currentSlide(n) {
+                slideIndex = n;
+                updateSlide();
+            }
+            function updateSlide() {
+                document.getElementById("slideImage").src = images[slideIndex];
+                dots.forEach((dot, index) => {
+                    dot.style.background = index === slideIndex ? "red" : "#ccc";
+                });
+            }
+            updateSlide();
+        </script>
+	<style>
+		.dot {
+			height: 10px;
+			width: 10px;
+			margin: 0 5px;
+			background-color: #ccc;
+			border-radius: 50%;
+			display: inline-block;
+			cursor: pointer;
+			transition: background 0.3s;
+		}
+	</style>
+
+<!-- statistik page -->
+<div class="stat-box" style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 1cm; margin-top: 80px">
+    <div style="display: flex; justify-content: center; gap: 40px;">
+        <div class="stat-item" style="display: flex; flex-direction: column; align-items: center;">
+            <span class="countdown" data-target="5000" style="font-size: 86px; font-weight: bold; line-height: 1.2;">0</span>
+            <span style="font-size: 26px; line-height: 3;">Total Luas Lahan (Ha)</span>
+        </div>
+        <div class="stat-item" style="display: flex; flex-direction: column; align-items: center;">
+            <span class="countdown" data-target="1200" style="font-size: 86px; font-weight: bold; line-height: 1.2;">0</span>
+            <span style="font-size: 26px; line-height: 3;">Plant</span>
+        </div>
+        <div class="stat-item" style="display: flex; flex-direction: column; align-items: center;">
+            <span class="countdown" data-target="7500" style="font-size: 86px; font-weight: bold; line-height: 1.2;">0</span>
+            <span style="font-size: 26px; line-height: 3;">Unit Gudang</span>
+        </div>
+        <div class="stat-item" style="display: flex; flex-direction: column; align-items: center;">
+            <span class="countdown" data-target="15" style="font-size: 86px; font-weight: bold; line-height: 1.2;">0</span>
+            <span style="font-size: 26px; line-height: 3;">Jumlah Petani</span>
+        </div>
+    </div>
+</div>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const counters = document.querySelectorAll(".countdown");
+		counters.forEach(counter => {
+			let target = +counter.getAttribute("data-target");
+			let count = 0;
+			let speed = target / 100;
+			function updateCount() {
+				if (count < target) {
+					count += Math.ceil(speed);
+					counter.textContent = count;
+					setTimeout(updateCount, 20);
+				} else {
+					counter.textContent = target;
+				}
+			}
+			updateCount();
+		});
+	});
+</script>
+
+<!-- PRODUCT SECTION -->
+<div class="product-section">
+    <h2>Produk Kami</h2>
+    <div class="product-container">
+        <div class="product-item">
+            <div class="product-image">
+                <img src="gambar/produk1.jpg" alt="Produk 1">
+            </div>
+            <div class="product-info">
+                <h3>Benih Jagung Premium</h3>
+                <p>Rp 50.000</p>
+                <p>Benih jagung berkualitas tinggi dengan hasil panen maksimal.</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-image">
+                <img src="gambar/produk2.jpg" alt="Produk 2">
+            </div>
+            <div class="product-info">
+                <h3>Benih Padi Unggul</h3>
+                <p>Rp 45.000</p>
+                <p>Benih padi dengan ketahanan tinggi dan produksi melimpah.</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-image">
+                <img src="gambar/produk3.jpg" alt="Produk 3">
+            </div>
+            <div class="product-info">
+                <h3>Benih Kedelai Berkualitas</h3>
+                <p>Rp 40.000</p>
+                <p>Benih kedelai unggulan dengan kualitas terbaik dan hasil optimal.</p>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="benih-jagung.html" class="button">Produk Lainnya</a>
+    </div>
+</div>
+
+    <!-- Artikel -->
+
+ <div class="container">
+        <div class="intro">
+            <h2>BERITA TERKINI</h2>
+            <p>Temukan berita terbaru dan informasi terkini dari PT Srijaya Internasional.</p>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Cari berita..." onkeyup="filterNews()">
+        </div>
+
+        <script>
+            function filterNews() {
+                const searchInput = document.getElementById('search').value.toLowerCase();
+                const newsItems = document.querySelectorAll('.news-item');
+                newsItems.forEach(item => {
+                    const title = item.getAttribute('data-title').toLowerCase();
+                    if (title.includes(searchInput)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+
+        <div class="news-grid" id="news-container">
+            <div class="news-item" data-title="Judul Berita 1">
+                <img src="gambar/1.jpg" alt="Berita 1">
+                <h3>Judul Berita 1</h3>
+                <p>7 Februari 2025</p>
+            </div>
+            <div class="news-item" data-title="Judul Berita 2">
+                <img src="gambar/2.jpg" alt="Berita 2">
+                <h3>Judul Berita 2</h3>
+                <p>7 Februari 2025</p>
+            </div>
+            <div class="news-item" data-title="Judul Berita 3">
+                <img src="gambar/3.jpg" alt="Berita 3">
+                <h3>Judul Berita 3</h3>
+                <p>7 Februari 2025</p>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="press-release.html" class="read-more">Baca Selengkapnya</a>
+        </div>
+
+        <script>
+            let slideIndex = 0;
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+
+            function showSlides() {
+                slides.forEach((slide, i) => {
+                    slide.style.display = (i === slideIndex) ? 'flex' : 'none';
+                });
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === slideIndex);
+                });
+            }
+
+            function currentSlide(n) {
+                slideIndex = n;
+                showSlides();
+            }
+
+            function plusSlides(n) {
+                slideIndex += n;
+                if (slideIndex >= slides.length) slideIndex = 0;
+                if (slideIndex < 0) slideIndex = slides.length - 1;
+                showSlides();
+            }
+
+            showSlides();
+        </script>
+    </div>
+
+    <section class="ulasan-wrapper">
+        <div class="ulasan-slider">
+            <button class="prev" onclick="moveSlide(-1)">&lt;</button>
+            <div class="ulasan-track">
+                <div class="ulasan-slide">
+                    <div class="ulasan">
+                        <img src="gambar/user.png" alt="Foto Konsumen">
+                        <h3>Joko Santoso</h3>
+                        <p>Jakarta, Indonesia</p>
+                        <div class="ulasan-quote">Produk berkualitas tinggi, sangat membantu dalam meningkatkan hasil panen saya!</div>
+                    </div>
+                    <div class="ulasan">
+                        <img src="gambar/user.png" alt="Foto Konsumen">
+                        <h3>Siti Rahmawati</h3>
+                        <p>Bandung, Indonesia</p>
+                        <div class="ulasan-quote">Pelayanan yang sangat baik, selalu mendapatkan respon cepat dan bantuan teknis yang luar biasa.</div>
+                    </div>
+                    <div class="ulasan">
+                        <img src="gambar/user.png" alt="Foto Konsumen">
+                        <h3>Andi Pratama</h3>
+                        <p>Surabaya, Indonesia</p>
+                        <div class="ulasan-quote">Harga terjangkau dengan kualitas yang sangat bagus. Sangat direkomendasikan!</div>
+                    </div>
+                </div>
+                <div class="ulasan-slide">
+                    <div class="ulasan">
+                        <img src="gambar/user.png" alt="Foto Konsumen">
+                        <h3>Rina Sari</h3>
+                        <p>Yogyakarta, Indonesia</p>
+                        <div class="ulasan-quote">Benih yang sangat baik, hasil panen saya meningkat pesat. Terima kasih!</div>
+                    </div>
+                    <div class="ulasan">
+                        <img src="gambar/user.png" alt="Foto Konsumen">
+                        <h3>Budi Setiawan</h3>
+                        <p>Medan, Indonesia</p>
+                        <div class="ulasan-quote">Layanan pelanggan yang sangat responsif dan membantu. Produk juga sangat berkualitas.</div>
+                    </div>
+                    <div class="ulasan">
+                        <img src="gambar/user.png" alt="Foto Konsumen">
+                        <h3>Agus Salim</h3>
+                        <p>Semarang, Indonesia</p>
+                        <div class="ulasan-quote">Produk yang sangat bagus dan berkualitas. Sangat membantu dalam usaha pertanian saya.</div>
+                    </div>
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&gt;</button>
+        </div>
+    </section>
+
+    </style>
+
+    <script>
+        let index = 0;
+        function moveSlide(direction) {
+            const track = document.querySelector('.ulasan-track');
+            const slides = document.querySelectorAll('.ulasan-slide');
+            const totalSlides = slides.length;
+            index += direction;
+            if (index < 0) index = totalSlides - 1;
+            if (index >= totalSlides) index = 0;
+            track.style.transform = `translateX(${-index * 100}%)`;
+        }
+    </script>
+    
+
+    <section class="hubungi-kami">
+        <div class="hubungi-overlay">
+            <div class="hubungi-container">
+                <h2>Butuh Bantuan atau Ingin Bertanya?</h2>
+                <p>Kami siap membantu Anda. Jangan ragu untuk menghubungi kami untuk informasi lebih lanjut mengenai produk dan layanan kami.</p>
+                <a href="hubungi-kami.html" class="hubungi-button">Hubungi Kami</a>
+            </div>
+        </div>
+    </section>
+    
+
+	<footer style="background-color: #222; color: #fff; padding: 40px 20px; text-align: center;">
+		<div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+			<!-- Tentang Kami -->
+			<div style="flex: 1; min-width: 250px; margin: 10px; text-align: left;">
+				<h3 style="color: #f8b400;">Tentang Kami</h3>
+				<p style="line-height: 1.6;">PT SRIJAYA INTERNASIONAL adalah perusahaan yang bergerak di bidang teknologi informasi, berkomitmen menghadirkan solusi terbaik untuk kebutuhan bisnis Anda.</p>
+			</div>
+			
+			<!-- Tautan Cepat -->
+			<div style="flex: 1; min-width: 200px; margin: 10px; text-align: left;">
+				<h3 style="color: #f8b400;">Tautan Cepat</h3>
+				<ul style="list-style: none; padding: 0;">
+					<li><a href="#home" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Beranda</a></li>
+					<li><a href="#about" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Tentang Kami</a></li>
+					<li><a href="#services" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Layanan</a></li>
+					<li><a href="#contact" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Kontak</a></li>
+				</ul>
+			</div>
+			
+			<!-- Kontak Kami -->
+			<div style="flex: 1; min-width: 250px; margin: 10px; text-align: left;">
+				<h3 style="color: #f8b400;">Kontak Kami</h3>
+				<p>Email: <a href="mailto:info@srijaya.com" style="color: #f8b400; text-decoration: none;">info@srijaya.com</a></p>
+				<p>Telepon: 0000-1234-5678</p>
+				<p>Alamat: Desa Keling, Kediri</p>
+			</div>
+			
+			<!-- Sosial Media -->
+			<div style="flex: 1; min-width: 200px; margin: 10px; text-align: left;">
+				<h3 style="color: #f8b400;">Ikuti Kami</h3>
+				<a href="#" style="color: #fff; text-decoration: none; margin: 5px; display: block;">Facebook</a>
+				<a href="#" style="color: #fff; text-decoration: none; margin: 5px; display: block;">Instagram</a>
+				<a href="#" style="color: #fff; text-decoration: none; margin: 5px; display: block;">LinkedIn</a>
+			</div>
+		</div>
+		
+		<hr style="border: 0; border-top: 1px solid #555; margin: 20px 0; width: 80%;">
+		
+		<!-- Copyright -->
+		<p style="font-size: 14px;">© 2025 PT SRIJAYA INTERNASIONAL. All Rights Reserved.</p>
+	</footer>
+
+    <script type="text/javascript" src="js/sticky.js"></script>
+    <script type="text/javascript" src="js/slideshowimage.js"></script>
+    <script type="text/javascript" src="js/manual-slideshow.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Berita</title>
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, sans-serif;
+      }
+
+     /* NAVBAR */
+     nav {
+          background-color: #ffffff;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 20px;
+          position: relative;
+          z-index: 10;
+      }
+
+      nav img {
+          height: 50px;
+      }
+
+      nav ul {
+          list-style: none;
+          display: flex;
+      }
+
+      nav ul li {
+          position: relative;
+      }
+
+      nav ul li a {
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+          padding: 10px 15px;
+          display: block;
+          transition: 0.3s;
+      }
+
+      nav ul li a:hover {
+          background-color: #27522d;
+          color: white;
+      }
+
+      /* DROPDOWN */
+      .dropdown-menu {
+          display: none;
+          position: absolute;
+          background-color: white;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+          min-width: 180px;
+          top: 100%;
+          left: 0;
+          border-radius: 5px;
+          overflow: hidden;
+      }
+
+      .dropdown-menu li {
+          display: block;
+      }
+
+      .dropdown-menu li a {
+          color: black;
+          padding: 10px;
+          display: block;
+      }
+
+      .dropdown:hover .dropdown-menu {
+          display: block;
+      }
+        body {
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            gap: 20px;
+        }
+        .main-content {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .main-content img {
+            width: 100%;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .share-buttons {
+            margin: 10px 0;
+        }
+        .share-buttons a {
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            color: white;
+        }
+        .twitter { background: #1DA1F2; }
+        .facebook { background: #1877F2; }
+        .whatsapp { background: #25D366; }
+        .recent-news {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: justify;
+        }
+        .recent-news h3 {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        .recent-news .featured-image {
+            width: 80%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+        .recent-item {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .recent-item img {
+            width: 80px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .more-news-button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #27522d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="gambar/logo.png" alt="Logo Perusahaan">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li class="dropdown">
+                    <a href="#">Tentang Kami ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="profil-perusahaan.html">Profil Perusahaan</a></li>
+                        <li><a href="visi-misi.html">Visi & Misi</a></li>
+                        <li><a href="struktur-perusahaan.html">Struktur Perusahaan</a></li>
+                        <li><a href="logo-perusahaan.html">Logo Perusahaan</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Layanan ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ulasan-konsumen.html">Ulasan Konsumen</a></li>
+                        <li><a href="sertifikasi.html">Sertfikasi</a></li>
+                        <li><a href="penghargaan.html">Penghargaan</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Produk ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="benih-jagung.html">Benih Jagung</a></li>
+                        <li><a href="brosur.html">Brosur</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Media & Informasi ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="press-release.html">Press Release</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                        <li><a href="karir.html">Karir</a></li>
+                    </ul>
+                </li>
+                </li>
+                <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="header">.</div>
+    
+    <div class="container">
+        <div class="main-content">
+            <h1>PT. Srijaya Internasional Perkuat Digitalisasi Pertanian dengan Peluncuran Website Resmi</h1>
+            <div class="share-buttons">
+                <a href="https://twitter.com/intent/tweet?text=Check%20this%20out%20https://yourwebsite.com/berita-judul-1.html" class="twitter" target="_blank">Share di X</a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourwebsite.com/berita-judul-1.html" class="facebook" target="_blank">Share di Facebook</a>
+                <a href="https://api.whatsapp.com/send?text=Check%20this%20out%20https://yourwebsite.com/berita-judul-1.html" class="whatsapp" target="_blank">Share di WhatsApp</a>
+            </div>
+            <p><strong>1 April 2025 - 14:30 WIB</strong></p>
+            <img src="gambar/1.jpg" alt="Foto Berita">
+            <p>
+                Kediri, [Tanggal] – PT. Srijaya Internasional, perusahaan perbenihan nasional yang berfokus pada pengembangan jagung hibrida dan padi unggul, secara resmi meluncurkan website pertamanya. Pengumuman ini dilakukan bersamaan dengan perayaan panen raya yang berlangsung di [Lokasi], sebagai bentuk komitmen perusahaan dalam meningkatkan layanan informasi bagi petani di seluruh Indonesia.
+            </p>
+            <br>   
+            <p>
+                Website resmi PT. Srijaya Internasional hadir sebagai platform digital yang memberikan berbagai informasi terkait produk benih unggulan, inovasi teknologi pertanian, serta tips dan panduan budidaya yang dapat diakses dengan mudah oleh para petani. Dengan adanya website ini, diharapkan komunikasi antara perusahaan dan pelanggan semakin efektif, serta memperluas jangkauan distribusi produk secara nasional.
+            </p>
+            <br>   
+            <p>
+                Direktur PT. Srijaya Internasional, [Nama Direktur], menyampaikan bahwa peluncuran website ini merupakan langkah strategis dalam mendukung digitalisasi pertanian. “Kami ingin memberikan kemudahan akses informasi bagi para petani agar mereka dapat memilih benih terbaik sesuai dengan kebutuhan lahan dan kondisi pertanian mereka. Selain itu, website ini juga akan menjadi sarana interaksi yang lebih dekat antara perusahaan dan pelanggan,” ujarnya.
+            </p>
+            <br>   
+            <p>
+                Perayaan panen raya yang berlangsung meriah turut menjadi momentum bagi PT. Srijaya Internasional untuk memperkenalkan berbagai inovasi terbaru dalam bidang perbenihan. Para petani yang hadir mendapatkan kesempatan untuk melihat langsung hasil panen dari benih jagung hibrida unggulan yang dikembangkan oleh perusahaan. Acara ini juga diisi dengan sesi diskusi dan edukasi mengenai teknik pertanian modern serta program kemitraan yang ditawarkan oleh PT. Srijaya Internasional.
+            </p>
+            <br>
+            <p>
+                Dengan peluncuran website ini, PT. Srijaya Internasional semakin memperkuat posisinya sebagai perusahaan yang tidak hanya menyediakan benih berkualitas tinggi, tetapi juga berperan aktif dalam memberikan edukasi dan solusi bagi petani. Ke depan, perusahaan berencana untuk terus mengembangkan fitur-fitur digital lainnya guna meningkatkan efisiensi dan kesejahteraan petani di seluruh Indonesia. Website resmi PT. Srijaya Internasional dapat diakses melalui [Alamat Website], dan diharapkan dapat menjadi sumber informasi terpercaya bagi para petani dalam meningkatkan produktivitas dan hasil pertanian mereka.
+            </p>
+        </div>
+        <aside class="recent-news">
+            <img src="gambar/produk-unggulan.jpg" alt="Berita Terkini" class="featured-image">
+            <h3>Berita Lainnya</h3>
+            <div class="recent-item">
+                <img src="gambar/3.jpg" alt="Berita 1">
+                <div>
+                    <p><strong>Judul Berita 1</strong></p>
+                    <p>10 Feb 2025</p>
+                </div>
+            </div>
+            <div class="recent-item">
+                <img src="gambar/4.jpg" alt="Berita 2">
+                <div>
+                    <p><strong>Judul Berita 2</strong></p>
+                    <p>9 Feb 2025</p>
+                </div>
+            </div>
+            <div class="recent-item">
+                <img src="gambar/5.jpg" alt="Berita 3">
+                <div>
+                    <p><strong>Judul Berita 3</strong></p>
+                    <p>8 Feb 2025</p>
+                </div>
+            </div>
+            <div class="recent-item">
+                <img src="gambar/4.jpg" alt="Berita 2">
+                <div>
+                    <p><strong>Judul Berita 2</strong></p>
+                    <p>9 Feb 2025</p>
+                </div>
+            </div>
+            <div class="recent-item">
+                <img src="gambar/4.jpg" alt="Berita 2">
+                <div>
+                    <p><strong>Judul Berita 2</strong></p>
+                    <p>9 Feb 2025</p>
+                </div>
+            </div>
+            <div class="recent-item">
+                <img src="gambar/4.jpg" alt="Berita 2">
+                <div>
+                    <p><strong>Judul Berita 2</strong></p>
+                    <p>9 Feb 2025</p>
+                </div>
+            </div>
+            <a href="#" class="more-news-button">Berita Lainnya</a>
+        </aside>
+    </div>
+
+</body>
+</html>

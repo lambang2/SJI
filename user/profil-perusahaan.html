@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Perusahaan</title>
+  <style>
+      /* RESET */
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, sans-serif;
+      }
+
+      /* NAVBAR */
+      nav {
+          background-color: #ffffff;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 20px;
+          position: relative;
+          z-index: 10;
+      }
+
+      nav img {
+          height: 50px;
+      }
+
+      nav ul {
+          list-style: none;
+          display: flex;
+      }
+
+      nav ul li {
+          position: relative;
+      }
+
+      nav ul li a {
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+          padding: 10px 15px;
+          display: block;
+          transition: 0.3s;
+      }
+
+      nav ul li a:hover {
+          background-color: #27522d;
+          color: white;
+      }
+
+      /* DROPDOWN */
+      .dropdown-menu {
+          display: none;
+          position: absolute;
+          background-color: white;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+          min-width: 180px;
+          top: 100%;
+          left: 0;
+          border-radius: 5px;
+          overflow: hidden;
+      }
+
+      .dropdown-menu li {
+          display: block;
+      }
+
+      .dropdown-menu li a {
+          color: black;
+          padding: 10px;
+          display: block;
+      }
+
+      .dropdown:hover .dropdown-menu {
+          display: block;
+      }
+
+      /* BAGIAN PROFIL PERUSAHAAN */
+      .container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 50px 10%;
+          gap: 50px;
+      }
+
+      .company-photo {
+          flex: 1;
+          text-align: center;
+      }
+
+      .company-photo img {
+          width: 100%;
+          max-width: 500px;
+          border-radius: 10px;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .company-photo p {
+          margin-top: 10px;
+          font-size: 14px;
+          font-style: italic;
+          color: #555;
+      }
+
+      .company-description {
+          flex: 1;
+      }
+
+      .company-description h1 {
+          font-size: 32px;
+          color: #27522d;
+          margin-bottom: 15px;
+      }
+
+      .company-description p {
+          font-size: 16px;
+          line-height: 1.6;
+          color: #333;
+      }
+
+      /* BAGIAN SEJARAH PERUSAHAAN */
+      .history-section {
+          background-color: #f4f4f4;
+          padding: 50px 10%;
+          text-align: center;
+      }
+
+      .history-section h2 {
+          font-size: 28px;
+          color: #27522d;
+          margin-bottom: 20px;
+      }
+
+      .history-section p {
+          font-size: 16px;
+          line-height: 1.8;
+          color: #444;
+          max-width: 800px;
+          margin: 0 auto;
+      }
+  </style>
+</head>
+<body>
+    <!-- Header dengan navigasi -->
+    <header id="home">
+        <nav>
+            <img src="gambar/logo.png" alt="Logo Perusahaan">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li class="dropdown">
+                    <a href="#">Tentang Kami ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="profil-perusahaan.html">Profil Perusahaan</a></li>
+                        <li><a href="visi-misi.html">Visi & Misi</a></li>
+                        <li><a href="struktur-perusahaan.html">Struktur Perusahaan</a></li>
+                        <li><a href="logo-perusahaan.html">Logo Perusahaan</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Layanan ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ulasan-konsumen.html">Ulasan Konsumen</a></li>
+                        <li><a href="sertifikasi.html">Sertfikasi</a></li>
+                        <li><a href="penghargaan.html">Penghargaan</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Produk ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="benih-jagung.html">Benih Jagung</a></li>
+                        <li><a href="brosur.html">Brosur</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Media & Informasi ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="press-release.html">Press Release</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                        <li><a href="karir.html">Karir</a></li>
+                    </ul>
+                </li>
+                </li>
+                <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BAGIAN PROFIL PERUSAHAAN -->
+    <section class="container">
+        <div class="company-photo">
+            <img src="gambar/perusahaan.jpg" alt="Foto Perusahaan">
+            <p>PT. Srijaya Internasional - Fasilitas dan Infrastruktur</p>
+        </div>
+        <div class="company-description">
+            <h1>Tentang PT. Srijaya Internasional</h1>
+            <p>
+                PT. Srijaya Internasional merupakan perusahaan benih nasional yang bergerak di bidang perbenihan jagung hibrida. Berdiri sejak tahun 2012, perusahaan ini telah berkomitmen untuk mendukung kemajuan sektor pertanian Indonesia dengan menghadirkan benih jagung berkualitas tinggi yang dapat meningkatkan produktivitas serta kesejahteraan petani.
+            </p>
+            <br>
+            <p>
+                Sebagai perusahaan yang terus berkembang, PT. Srijaya Internasional secara aktif melakukan penelitian dan pengembangan untuk menciptakan varietas unggul baru yang lebih adaptif terhadap berbagai kondisi lingkungan, tahan terhadap hama dan penyakit, serta mampu menghasilkan panen yang melimpah. Dengan semangat inovasi, perusahaan berupaya memberikan solusi terbaik bagi petani dalam menghadapi tantangan pertanian modern.
+            </p>
+            <br>
+            <p>
+                PT. Srijaya Internasional memiliki satu plant dengan kapasitas ... yang terletak di Desa Kencong, Kecamatan Kepung, Kabupaten Kediri. Fasilitas ini dilengkapi dengan sarana dan prasarana produksi yang modern, mulai dari sistem pemrosesan benih yang canggih, fasilitas penyimpanan yang optimal, hingga laboratorium penelitian untuk memastikan setiap benih yang dihasilkan memenuhi standar kualitas tertinggi.
+            </p>
+            <br>
+            <p>
+                Selain itu, PT. Srijaya Internasional juga didukung oleh sumber daya manusia yang kompeten dan berpengalaman di bidang perbenihan, agronomi, serta teknologi pertanian. Dengan kombinasi antara tenaga ahli yang berdedikasi dan teknologi produksi yang mutakhir, perusahaan terus berupaya memberikan kontribusi nyata dalam meningkatkan ketahanan pangan nasional.
+            </p>
+        </div>
+    </section>
+
+    <!-- BAGIAN SEJARAH PERUSAHAAN -->
+    <section class="history-section">
+        <h2>Sejarah Perusahaan</h2>
+        <p>
+            Berawal dari kepedulian terhadap ketahanan pangan nasional dan kesejahteraan petani, PT. SRIJAYA INTERNASIONAL didirikan sebagai perusahaan perbenihan yang berfokus pada pengembangan jagung super hibrida dan padi unggul. Dengan merek dagang SRY AGGUNG 919 yang telah dipatenkan, perusahaan ini hadir sebagai solusi atas kebutuhan petani akan benih berkualitas tinggi yang dapat meningkatkan produktivitas hasil panen. Melalui inovasi dan pengembangan varietas unggul, perusahaan berkomitmen untuk mendukung pertumbuhan sektor pertanian yang lebih mandiri dan berkelanjutan.
+        </p>
+        <br>
+        <p>
+            Sejak didirikan pada tahun 2012, PT. SRIJAYA INTERNASIONAL terus berupaya menghadirkan inovasi dalam dunia perbenihan dengan mengembangkan varietas yang lebih adaptif terhadap berbagai kondisi lingkungan di Indonesia. Dengan semangat kemandirian, perusahaan bertekad menjadi bagian dari upaya menciptakan sektor pertanian yang lebih berdaya saing, sekaligus mengurangi ketergantungan terhadap benih impor. Selain itu, perusahaan berperan aktif dalam mendukung kesejahteraan petani dengan menyediakan benih yang tidak hanya unggul dari segi kualitas, tetapi juga lebih terjangkau dan mudah diakses oleh petani di seluruh Nusantara.
+        </p>
+        <br>
+        <p>
+            Dalam perjalanannya, PT. SRIJAYA INTERNASIONAL terus berkembang dengan mengandalkan tenaga ahli berpengalaman di bidang perbenihan serta menerapkan standar produksi yang ketat guna memastikan benih yang dihasilkan memiliki kualitas terbaik. Perusahaan didukung oleh fasilitas produksi modern yang dilengkapi dengan teknologi canggih untuk menjamin ketahanan, daya tumbuh, serta hasil panen yang optimal. Melalui proses penelitian dan pengembangan yang berkelanjutan, perusahaan berkomitmen untuk terus memberikan kontribusi nyata dalam mendukung program swasembada pangan nasional serta meningkatkan kesejahteraan petani di seluruh Indonesia.
+        </p>
+    </section>
+	<footer style="background-color: #222; color: #fff; padding: 40px 20px; text-align: center;">
+		<div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+			<!-- Tentang Kami -->
+			<div style="flex: 1; min-width: 250px; margin: 10px; text-align: left;">
+				<h3 style="color: #f8b400;">Tentang Kami</h3>
+				<p style="line-height: 1.6;">PT SRIJAYA INTERNASIONAL adalah perusahaan yang bergerak di bidang teknologi informasi, berkomitmen menghadirkan solusi terbaik untuk kebutuhan bisnis Anda.</p>
+			</div>
+			
+			<!-- Tautan Cepat -->
+			<div style="flex: 1; min-width: 200px; margin: 10px; text-align: left;">
+				<h3 style="color: #f8b400;">Tautan Cepat</h3>
+				<ul style="list-style: none; padding: 0;">
+					<li><a href="#home" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Beranda</a></li>
+					<li><a href="#about" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Tentang Kami</a></li>
+					<li><a href="#services" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Layanan</a></li>
+					<li><a href="#contact" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Kontak</a></li>
+				</ul>
+			</div>
+			
+			<!-- Kontak Kami -->
+			<div style="flex: 1; min-width: 250px; margin: 10px; text-align: left;">
+				<h3 style="color: #f8b400;">Kontak Kami</h3>
+				<p>Email: <a href="mailto:info@srijaya.com" style="color: #f8b400; text-decoration: none;">info@srijaya.com</a></p>
+				<p>Telepon: 0000-1234-5678</p>
+				<p>Alamat: Desa Keling, Kediri</p>
+			</div>
+			
+			<!-- Sosial Media -->
+			<div style="flex: 1; min-width: 200px; margin: 10px; text-align: left;">
+				<h3 style="color: #f8b400;">Ikuti Kami</h3>
+				<a href="#" style="color: #fff; text-decoration: none; margin: 5px; display: block;">Facebook</a>
+				<a href="#" style="color: #fff; text-decoration: none; margin: 5px; display: block;">Instagram</a>
+				<a href="#" style="color: #fff; text-decoration: none; margin: 5px; display: block;">LinkedIn</a>
+			</div>
+		</div>
+		
+		<hr style="border: 0; border-top: 1px solid #555; margin: 20px 0; width: 80%;">
+		
+		<!-- Copyright -->
+		<p style="font-size: 14px;">© 2025 PT SRIJAYA INTERNASIONAL. All Rights Reserved.</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benih Jagung</title>
+  <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, sans-serif;
+      }
+
+     /* NAVBAR */
+     nav {
+          background-color: #ffffff;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 20px;
+          position: relative;
+          z-index: 10;
+      }
+
+      nav img {
+          height: 50px;
+      }
+
+      nav ul {
+          list-style: none;
+          display: flex;
+      }
+
+      nav ul li {
+          position: relative;
+      }
+
+      nav ul li a {
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+          padding: 10px 15px;
+          display: block;
+          transition: 0.3s;
+      }
+
+      nav ul li a:hover {
+          background-color: #27522d;
+          color: white;
+      }
+
+      /* DROPDOWN */
+      .dropdown-menu {
+          display: none;
+          position: absolute;
+          background-color: white;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+          min-width: 180px;
+          top: 100%;
+          left: 0;
+          border-radius: 5px;
+          overflow: hidden;
+      }
+
+      .dropdown-menu li {
+          display: block;
+      }
+
+      .dropdown-menu li a {
+          color: black;
+          padding: 10px;
+          display: block;
+      }
+
+      .dropdown:hover .dropdown-menu {
+          display: block;
+      }
+      .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        
+        .title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            padding: 40px;
+            background: #f8f8f8;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 15px;
+        }
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #222;
+        }
+        .product-price {
+            font-size: 16px;
+            color: #27ae60;
+            margin-top: 5px;
+        }
+        .product-description {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #e63946;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <nav>
+                <img src="gambar/logo.png" alt="Logo Perusahaan">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="#">Tentang Kami ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="profil-perusahaan.html">Profil Perusahaan</a></li>
+                            <li><a href="visi-misi.html">Visi & Misi</a></li>
+                            <li><a href="struktur-perusahaan.html">Struktur Perusahaan</a></li>
+                            <li><a href="logo-perusahaan.html">Logo Perusahaan</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Layanan ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ulasan-konsumen.html">Ulasan Konsumen</a></li>
+                            <li><a href="sertifikasi.html">Sertfikasi</a></li>
+                            <li><a href="penghargaan.html">Penghargaan</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Produk ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="benih-jagung.html">Benih Jagung</a></li>
+                            <li><a href="brosur.html">Brosur</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Media & Informasi ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="press-release.html">Press Release</a></li>
+                            <li><a href="galeri.html">Galeri</a></li>
+                            <li><a href="karir.html">Karir</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <!-- PRODUCT HIGHLIGHT -->
+    <div class="container">
+        <h2 class="title">Produk Kami</h2>
+        <div class="grid">
+            <div class="product-card">
+                <img src="gambar/produk1.jpg" alt="Produk 1" class="product-image">
+                <div class="product-info">
+                    <p class="product-name">Benih Jagung Premium</p>
+                    <p class="product-price">Rp 50.000</p>
+                    <p class="product-description">Benih jagung berkualitas tinggi dengan hasil panen maksimal.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="gambar/produk2.jpg" alt="Produk 2" class="product-image">
+                <div class="product-info">
+                    <p class="product-name">Benih Padi Unggul</p>
+                    <p class="product-price">Rp 45.000</p>
+                    <p class="product-description">Benih padi dengan ketahanan tinggi dan produksi melimpah.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="gambar/produk3.jpg" alt="Produk 3" class="product-image">
+                <div class="product-info">
+                    <p class="product-name">Benih Kedelai Berkualitas</p>
+                    <p class="product-price">Rp 40.000</p>
+                    <p class="product-description">Benih kedelai unggulan dengan kualitas terbaik dan hasil optimal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="slider.js"></script>
+    <script>
+        let slideIndex = 0;
+        const images = ["gambar/1.jpg", "gambar/2.jpg", "gambar/3.jpg", "gambar/4.jpg", "gambar/5.jpg", "gambar/6.jpg", "gambar/7.jpg", "gambar/8.jpg"];
+        const dots = document.querySelectorAll(".dot");
+        function plusDivs(n) {
+            slideIndex += n;
+            if (slideIndex >= images.length) slideIndex = 0;
+            if (slideIndex < 0) slideIndex = images.length - 1;
+            updateSlide();
+        }
+        function currentSlide(n) {
+            slideIndex = n;
+            updateSlide();
+        }
+        function updateSlide() {
+            document.getElementById("slideImage").src = images[slideIndex];
+            dots.forEach((dot, index) => {
+                dot.style.background = index === slideIndex ? "red" : "#ccc";
+            });
+        }
+        updateSlide();
+    </script>
+    <style>
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 5px;
+            background-color: #ccc;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+    </style>
+        
+        <footer style="background-color: #222; color: #fff; padding: 40px 20px; text-align: center;">
+            <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <!-- Tentang Kami -->
+                <div style="flex: 1; min-width: 250px; margin: 10px; text-align: left;">
+                    <h3 style="color: #f8b400;">Tentang Kami</h3>
+                    <p style="line-height: 1.6;">PT SRIJAYA INTERNASIONAL adalah perusahaan yang bergerak di bidang teknologi informasi, berkomitmen menghadirkan solusi terbaik untuk kebutuhan bisnis Anda.</p>
+                </div>
+                
+                <!-- Tautan Cepat -->
+                <div style="flex: 1; min-width: 200px; margin: 10px; text-align: left;">
+                    <h3 style="color: #f8b400;">Tautan Cepat</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#home" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Beranda</a></li>
+                        <li><a href="#about" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Tentang Kami</a></li>
+                        <li><a href="#services" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Layanan</a></li>
+                        <li><a href="#contact" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Kontak Kami -->
+                <div style="flex: 1; min-width: 250px; margin: 10px; text-align: left;">
+                    <h3 style="color: #f8b400;">Kontak Kami</h3>
+                    <p>Email: <a href="mailto:info@srijaya.com" style="color: #f8b400; text-decoration: none;">info@srijaya.com</a></p>
+                    <p>Telepon: 0000-1234-5678</p>
+                    <p>Alamat: Desa Keling, Kediri</p>
+                </div>
+                
+                <!-- Sosial Media -->
+                <div style="flex: 1; min-width: 200px; margin: 10px; text-align: left;">
+                    <h3 style="color: #f8b400;">Ikuti Kami</h3>
+                    <a href="#" style="color: #fff; text-decoration: none; margin: 5px; display: block;">Facebook</a>
+                    <a href="#" style="color: #fff; text-decoration: none; margin: 5px; display: block;">Instagram</a>
+                    <a href="#" style="color: #fff; text-decoration: none; margin: 5px; display: block;">LinkedIn</a>
+                </div>
+            </div>
+            
+            <hr style="border: 0; border-top: 1px solid #555; margin: 20px 0; width: 80%;">
+            
+            <!-- Copyright -->
+            <p style="font-size: 14px;">© 2025 PT SRIJAYA INTERNASIONAL. All Rights Reserved.</p>
+        </footer>
+    </body>
+    </html>

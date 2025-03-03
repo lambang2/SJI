@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Perusahaan</title>
+  <style>
+      /* RESET */
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, sans-serif;
+      }
+
+     /* NAVBAR */
+     nav {
+          background-color: #ffffff;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 20px;
+          position: relative;
+          z-index: 10;
+      }
+
+      nav img {
+          height: 50px;
+      }
+
+      nav ul {
+          list-style: none;
+          display: flex;
+      }
+
+      nav ul li {
+          position: relative;
+      }
+
+      nav ul li a {
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+          padding: 10px 15px;
+          display: block;
+          transition: 0.3s;
+      }
+
+      nav ul li a:hover {
+          background-color: #27522d;
+          color: white;
+      }
+
+      /* DROPDOWN */
+      .dropdown-menu {
+          display: none;
+          position: absolute;
+          background-color: white;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+          min-width: 180px;
+          top: 100%;
+          left: 0;
+          border-radius: 5px;
+          overflow: hidden;
+      }
+
+      .dropdown-menu li {
+          display: block;
+      }
+
+      .dropdown-menu li a {
+          color: black;
+          padding: 10px;
+          display: block;
+      }
+
+      .dropdown:hover .dropdown-menu {
+          display: block;
+      }
+      .header {
+          background: url('gambar/header.jpg') center/cover no-repeat;
+          height: 250px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: 24px;
+          font-weight: bold;
+      }
+
+      .struktur-perusahaan {
+          max-width: 900px;
+          margin: 30px auto;
+          background: white;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          text-align: left;
+      }
+
+      .struktur-perusahaan img {
+          width: 50%;
+          border-radius: 20px;
+      }
+
+      .struktur-text {
+          width: 80%;
+      }
+  </style>
+</head>
+<body>
+    <header>
+            <nav>
+                <img src="gambar/logo.png" alt="Logo Perusahaan">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="#">Tentang Kami ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="profil-perusahaan.html">Profil Perusahaan</a></li>
+                            <li><a href="visi-misi.html">Visi & Misi</a></li>
+                            <li><a href="struktur-perusahaan.html">Struktur Perusahaan</a></li>
+                            <li><a href="logo-perusahaan.html">Logo Perusahaan</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Layanan ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ulasan-konsumen.html">Ulasan Konsumen</a></li>
+                            <li><a href="sertifikasi.html">Sertfikasi</a></li>
+                            <li><a href="penghargaan.html">Penghargaan</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Produk ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="benih-jagung.html">Benih Jagung</a></li>
+                            <li><a href="brosur.html">Brosur</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Media & Informasi ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="press-release.html">Press Release</a></li>
+                            <li><a href="galeri.html">Galeri</a></li>
+                            <li><a href="karir.html">Karir</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div class="header">LOGO PERUSAHAAN</div>
+
+        <section class="struktur-perusahaan">
+            <img src="gambar/logo.png" alt="Logo Perusahaan">
+            <div class="struktur-text">
+                <p>Logo PT. Srijaya Internasional didominasi oleh warna hijau dan merah, yang masing-masing memiliki makna simbolis sesuai dengan visi dan misi perusahaan. Warna hijau melambangkan alam, pertumbuhan, serta keberlanjutan, mencerminkan komitmen perusahaan dalam menyediakan produk perbenihan yang ramah lingkungan guna mendukung ketahanan pangan nasional. Sementara itu, warna merah merepresentasikan semangat, keberanian, serta inovasi yang terus mendorong perusahaan dalam mengembangkan dan menghasilkan varietas jagung hibrida unggul.</p>
+                <br>
+                <p>Selain itu, keberadaan dua garis merah dalam logo memberikan penegasan terhadap prinsip dasar perusahaan, yaitu semangat inovasi, ketekunan dalam riset dan pengembangan, serta arah yang jelas dan penuh keyakinan dalam menghadapi dinamika industri pertanian. Logo ini secara keseluruhan mencerminkan identitas PT. Srijaya Internasional sebagai perusahaan yang berorientasi pada kemajuan, keberlanjutan, dan kesejahteraan petani di Indonesia.</p>
+            </div>
+        </section>
+        
+        <footer style="background-color: #222; color: #fff; padding: 40px 20px; text-align: center;">
+            <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <!-- Tentang Kami -->
+                <div style="flex: 1; min-width: 250px; margin: 10px; text-align: left;">
+                    <h3 style="color: #f8b400;">Tentang Kami</h3>
+                    <p style="line-height: 1.6;">PT SRIJAYA INTERNASIONAL adalah perusahaan yang bergerak di bidang teknologi informasi, berkomitmen menghadirkan solusi terbaik untuk kebutuhan bisnis Anda.</p>
+                </div>
+                
+                <!-- Tautan Cepat -->
+                <div style="flex: 1; min-width: 200px; margin: 10px; text-align: left;">
+                    <h3 style="color: #f8b400;">Tautan Cepat</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#home" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Beranda</a></li>
+                        <li><a href="#about" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Tentang Kami</a></li>
+                        <li><a href="#services" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Layanan</a></li>
+                        <li><a href="#contact" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Kontak Kami -->
+                <div style="flex: 1; min-width: 250px; margin: 10px; text-align: left;">
+                    <h3 style="color: #f8b400;">Kontak Kami</h3>
+                    <p>Email: <a href="mailto:info@srijaya.com" style="color: #f8b400; text-decoration: none;">info@srijaya.com</a></p>
+                    <p>Telepon: 0000-1234-5678</p>
+                    <p>Alamat: Desa Keling, Kediri</p>
+                </div>
+                
+                <!-- Sosial Media -->
+                <div style="flex: 1; min-width: 200px; margin: 10px; text-align: left;">
+                    <h3 style="color: #f8b400;">Ikuti Kami</h3>
+                    <a href="#" style="color: #fff; text-decoration: none; margin: 5px; display: block;">Facebook</a>
+                    <a href="#" style="color: #fff; text-decoration: none; margin: 5px; display: block;">Instagram</a>
+                    <a href="#" style="color: #fff; text-decoration: none; margin: 5px; display: block;">LinkedIn</a>
+                </div>
+            </div>
+            
+            <hr style="border: 0; border-top: 1px solid #555; margin: 20px 0; width: 80%;">
+            
+            <!-- Copyright -->
+            <p style="font-size: 14px;">© 2025 PT SRIJAYA INTERNASIONAL. All Rights Reserved.</p>
+        </footer>
+    </body>
+    </html>

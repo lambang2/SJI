@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brosur</title>
+  <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, sans-serif;
+      }
+
+     /* NAVBAR */
+     nav {
+          background-color: #ffffff;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 20px;
+          position: relative;
+          z-index: 10;
+      }
+
+      nav img {
+          height: 50px;
+      }
+
+      nav ul {
+          list-style: none;
+          display: flex;
+      }
+
+      nav ul li {
+          position: relative;
+      }
+
+      nav ul li a {
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+          padding: 10px 15px;
+          display: block;
+          transition: 0.3s;
+      }
+
+      nav ul li a:hover {
+          background-color: #27522d;
+          color: white;
+      }
+
+      /* DROPDOWN */
+      .dropdown-menu {
+          display: none;
+          position: absolute;
+          background-color: white;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+          min-width: 180px;
+          top: 100%;
+          left: 0;
+          border-radius: 5px;
+          overflow: hidden;
+      }
+
+      .dropdown-menu li {
+          display: block;
+      }
+
+      .dropdown-menu li a {
+          color: black;
+          padding: 10px;
+          display: block;
+      }
+
+      .dropdown:hover .dropdown-menu {
+          display: block;
+      }
+
+      /* HEADER */
+      .header {
+          background: url('gambar/header.jpg') center/cover no-repeat;
+          height: 250px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: 24px;
+          font-weight: bold;
+      }
+
+      /* BROSUR CONTAINER */
+      .brosur-container {
+          display: flex;
+          max-width: 1000px;
+          background: white;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+          margin: 40px auto;
+          align-items: center;
+          flex-wrap: wrap;
+      }
+
+      .brosur-text {
+          flex: 1;
+          padding: 20px;
+      }
+
+      .brosur-text h2 {
+          font-size: 28px;
+          color: #333;
+      }
+
+      .brosur-text p {
+          font-size: 16px;
+          color: #555;
+          margin-bottom: 20px;
+      }
+
+      .download-button {
+          display: inline-block;
+          padding: 10px 20px;
+          background: #27ae60;
+          color: white;
+          text-decoration: none;
+          border-radius: 8px;
+          font-size: 16px;
+          transition: background 0.3s;
+      }
+
+      .download-button:hover {
+          background: #218c54;
+      }
+
+      .image-content {
+          flex: 1;
+          text-align: center;
+      }
+
+      .image-content img {
+          max-width: 100%;
+          border-radius: 10px;
+      }
+  </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img src="gambar/logo.png" alt="Logo Perusahaan">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li class="dropdown">
+                    <a href="#">Tentang Kami ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="profil-perusahaan.html">Profil Perusahaan</a></li>
+                        <li><a href="visi-misi.html">Visi & Misi</a></li>
+                        <li><a href="struktur-perusahaan.html">Struktur Perusahaan</a></li>
+                        <li><a href="logo-perusahaan.html">Logo Perusahaan</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Layanan ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ulasan-konsumen.html">Ulasan Konsumen</a></li>
+                        <li><a href="sertifikasi.html">Sertfikasi</a></li>
+                        <li><a href="penghargaan.html">Penghargaan</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Produk ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="benih-jagung.html">Benih Jagung</a></li>
+                        <li><a href="brosur.html">Brosur</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Media & Informasi ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="press-release.html">Press Release</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                        <li><a href="karir.html">Karir</a></li>
+                    </ul>
+                </li>
+                </li>
+                <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="header">Brosur</div>
+
+    <section class="brosur-container">
+        <div class="brosur-text">
+            <h2>Brosur Produk</h2>
+            <p>Unduh brosur kami untuk mengetahui lebih lanjut tentang produk unggulan kami.</p>
+            <a href="https://drive.google.com/drive/u/1/folders/1FZlRyRFAAQHprvV9dZQHvViHNDPHZxrf" target="_blank" class="download-button">Unduh Disini</a>
+        </div>
+        <div class="image-content">
+            <img src="gambar/brosur.jpg" alt="Brosur Produk">
+        </div>
+    </section>
+
+       
+    <footer style="background-color: #222; color: #fff; padding: 40px 20px; text-align: center;">
+        <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+            <!-- Tentang Kami -->
+            <div style="flex: 1; min-width: 250px; margin: 10px; text-align: left;">
+                <h3 style="color: #f8b400;">Tentang Kami</h3>
+                <p style="line-height: 1.6;">PT SRIJAYA INTERNASIONAL adalah perusahaan yang bergerak di bidang teknologi informasi, berkomitmen menghadirkan solusi terbaik untuk kebutuhan bisnis Anda.</p>
+            </div>
+            
+            <!-- Tautan Cepat -->
+            <div style="flex: 1; min-width: 200px; margin: 10px; text-align: left;">
+                <h3 style="color: #f8b400;">Tautan Cepat</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="#home" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Beranda</a></li>
+                    <li><a href="#about" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Tentang Kami</a></li>
+                    <li><a href="#services" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Layanan</a></li>
+                    <li><a href="#contact" style="color: #fff; text-decoration: none; display: block; padding: 5px 0;">Kontak</a></li>
+                </ul>
+            </div>
+            
+            <!-- Kontak Kami -->
+            <div style="flex: 1; min-width: 250px; margin: 10px; text-align: left;">
+                <h3 style="color: #f8b400;">Kontak Kami</h3>
+                <p>Email: <a href="mailto:info@srijaya.com" style="color: #f8b400; text-decoration: none;">info@srijaya.com</a></p>
+                <p>Telepon: 0000-1234-5678</p>
+                <p>Alamat: Desa Keling, Kediri</p>
+            </div>
+            
+            <!-- Sosial Media -->
+            <div style="flex: 1; min-width: 200px; margin: 10px; text-align: left;">
+                <h3 style="color: #f8b400;">Ikuti Kami</h3>
+                <a href="#" style="color: #fff; text-decoration: none; margin: 5px; display: block;">Facebook</a>
+                <a href="#" style="color: #fff; text-decoration: none; margin: 5px; display: block;">Instagram</a>
+                <a href="#" style="color: #fff; text-decoration: none; margin: 5px; display: block;">LinkedIn</a>
+            </div>
+        </div>
+        
+        <hr style="border: 0; border-top: 1px solid #555; margin: 20px 0; width: 80%;">
+        
+        <!-- Copyright -->
+        <p style="font-size: 14px;">© 2025 PT SRIJAYA INTERNASIONAL. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
