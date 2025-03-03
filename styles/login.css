@@ -1,0 +1,58 @@
+*{
+	box-sizing: border-box;
+	font-family:quicksand;
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: "quicksand";
+	src:url("Quicksand-Regular.TTF");
+}
+.container{
+	width: 550px;
+	height: 550px;
+	background-color: #fff;
+	margin: 50px 20px 20px 20px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	overflow: hidden;
+	padding: 20px;
+}
+.container img{
+	width: 200px;
+	height: 100px;
+	margin: 50px 20px 20px 20px;
+
+}
+.container p{
+	margin: 10px;
+	color: grey;
+}
+input[type="email"],input[type="password"]{
+	width: 100%;
+	padding: 10px;
+	border: 1px solid rgba(0,0,0,0.2);
+}
+
+.forgot{
+	text-align: right;
+}
+.forgot a{
+	text-decoration: none;
+}
+button{
+	width: 100%;
+	padding: 9px;
+	border: none;
+	color: #fff;
+	background-color: rgb(53, 70, 255);
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+.ask{
+	text-align: center;
+}
+.ask a{
+	text-decoration: none;
+	color: rgb(53, 70, 255);
+}
